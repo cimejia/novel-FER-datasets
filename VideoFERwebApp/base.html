@@ -1,0 +1,47 @@
+{% extends 'bootstrap/base.html' %}
+<!--
+{% block title %}
+    {% if title %}{{ title }} - Reconocimiento automático de expresiones faciales{% else %}Reconocimiento automático de expresiones faciales{% endif %}
+{% endblock %}
+-->
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h3>Sitio Web demostrativo del proyecto de investigación doctoral</h3>
+                <!--
+                <a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
+                -->
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-right">
+                    <li>Christian Mejia-Escobar</li>
+                    <li>Miguel Cazorla</li>
+                    <li>Ester Martinez-Martin</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+<!--
+{% block content %}
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-info" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {# application content needs to be provided in the app_content block #}
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}
+-->
