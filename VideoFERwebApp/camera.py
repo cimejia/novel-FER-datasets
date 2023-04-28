@@ -3,18 +3,13 @@ from model import FacialExpressionModel
 import numpy as np
 
 facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-model = FacialExpressionModel('models/FER2013/new_fer_best_model.h5')
-#model = FacialExpressionModel('models/NHFI/new_best_model_tl.h5')
-#model = FacialExpressionModel('models/AFFECTNET/best_model_fs.h5')
-#model = FacialExpressionModel('models/MIXED/best_model_mixed.h5')
-#model = FacialExpressionModel('vit_large_patch16_48.h5')
+model = FacialExpressionModel('best_model_merged.h5')
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture('videos/videoplayback.mp4')
-        #self.video = cv2.VideoCapture('videos/video.mp4')
+        self.video = cv2.VideoCapture('video.mp4')
 
     def __del__(self):
         self.video.release()
