@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emotion perception from facial expression recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h3>Demo website for the research project</h3>
+                <!--
+                <a class="navbar-brand" href="/">Home</a>
+                -->
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-right">
+                    <li>Christian Mejia-Escobar</li>
+                    <li>Miguel Cazorla</li>
+                    <li>Ester Martinez-Martin</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="video_container" align="center">
+      <h2>Emotion perception from facial expression recognition</h2>      
+      <img id="bg" width=640px src="{{ url_for('video_feed') }}">
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
